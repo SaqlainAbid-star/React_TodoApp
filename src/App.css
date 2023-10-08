@@ -21,7 +21,6 @@ h1{
   box-shadow: 0px 5px 7px rgb(26, 25, 25);
   color: white;
   border-radius: 10px;
-  
 }
 
 .todo-input{
@@ -31,7 +30,8 @@ h1{
   border-bottom: 1px solid rgb(77, 77, 77);
   padding-bottom: 25px;
   margin-bottom: 25px;
-  
+
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
 }
 
 .todo-input-item{
@@ -39,7 +39,10 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
+
+  margin-bottom: 15px; /* Add spacing between input items */
+  flex-grow: 1;
+  flex-basis: 200;
 }
 
 .todo-input-item label{
@@ -51,6 +54,7 @@ h1{
   border: none;
   padding: 8px;
   width: 250px;
+
 }
 
 .todo-input-item input:focus{
@@ -68,8 +72,10 @@ h1{
   margin-top: 25px;
   padding: 10px;
   width: 60px;
+  
   cursor: pointer;
   border-radius: 5px;
+
 
 }
 
@@ -150,3 +156,6 @@ h1{
 .check-icon:hover{
   color: rgb(4, 192, 104);
 }
+
+
+
